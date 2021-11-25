@@ -1,0 +1,6 @@
+google.com
+8.8.8.8
+youtube.com
+4.4.4.4
+amazon.com
+facebook.com
