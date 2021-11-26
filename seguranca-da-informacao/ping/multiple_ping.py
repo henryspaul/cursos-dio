@@ -1,6 +1,6 @@
 import os #Library import (integrate programs and resources of OS)
 #import time 
-os.chdir('D:\MyProjects\cursos-dio\seguranca-da-informacao\ping')
+os.chdir('D:\\MyProjects\\cursos-dio\\seguranca-da-informacao\\ping')
 
 with open('hosts.txt') as file:
     dump = file.read()

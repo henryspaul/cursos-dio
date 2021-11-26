@@ -15,10 +15,10 @@ def main():
 
     try:
         s.connect((HostAim, int(PortAim)))
-        print(f'TCP client  was successfully connected to Host: {HostAim},', f'Port: {PortAim}')
+        print(f'TCP client  was successfully connected to Host: {HostAim}, Port: {PortAim}')
         s.shutdown(2)
     except socket.error as e:
-        print(f'Failed to connect to Host: {HostAim},', f'Port: {PortAim}')
+        print(f'Failed to connect to Host: {HostAim}, Port: {PortAim}')
         print(f'Error: {e}')
         sys.exit()
 
