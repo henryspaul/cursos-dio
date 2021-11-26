@@ -6,7 +6,7 @@ def car(speed, pilot):
     while route <= 100:
         route += speed
         time.sleep(0.5)
-        print(f'Pilot: {pilot}, Km {route}')
+        print(f'Pilot: {pilot}, Km {route} \n')
 
 
 t_car1 = Thread(target = car, args = [20, 'Paul'])
