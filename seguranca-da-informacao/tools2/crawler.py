@@ -2,7 +2,9 @@ import requests
 import operator
 from collections import Counter
 from bs4 import BeautifulSoup
+import os
 
+os.chdir('D:\\MyProjects\\cursos-dio\\seguranca-da-informacao\\tools2')
 
 def start(url):
     wordlist = []
@@ -32,6 +34,8 @@ def clean_wordlist(wordlist):
             clean_list.append(word)
     create_dictionary(clean_list)
 
+
+
 def create_dictionary(clean_list):
     word_count = {}
 
@@ -41,8 +45,11 @@ def create_dictionary(clean_list):
         else:
             word_count[word] = 1
 
-    for key, value in sorted(word_count.itens(), key = operator.itemgetter(1)):
+
+    for key, value in sorted(word_count.itens(), 
+                             key = operator.itemgetter(1)):
         print("% S : % S " % (key,value))
+    
     c = Counter(word_count)
 
     top = c.most_common(10)
@@ -50,4 +57,4 @@ def create_dictionary(clean_list):
 
 
 if __name__ == '__main__':
-    start('https://www.ncbi.nlm.nih.gov/gene/85358')
+    start('https://www.youtube.com/')
